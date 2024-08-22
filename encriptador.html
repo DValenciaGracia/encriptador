@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador 2000 Plus</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Encriptador 2000 Plus</h1>
+    </div>
+    <div class="container">
+        <div class="entradatexto">
+            <textarea id="inputText" placeholder="Introduce el texto aquí..."></textarea>
+            <div class="button-container">
+                <button onclick="processText('encrypt')">Encriptar</button>
+                <button onclick="processText('decrypt')">Desencriptar</button>
+                <button id="copyButton" onclick="copyToClipboard()">Copiar</button>
+            </div>
+        </div>
+        <div class="salidatexto">
+            <textarea id="outputText" readonly placeholder="Texto encriptado..."></textarea>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <div>
+    <footer>
+        <p>&copy; 2024 Daniel Valencia</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
